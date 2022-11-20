@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-image: url(../public/strats.jpg);
+  background-size: cover;
+}
+.dot{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgb(73, 255, 240),
+              0 0 40px rgb(0, 255, 213),
+              0 0 60px rgb(0, 247, 255),
+              0 0 50px rgb(255, 173, 65),
+              0 0 60px rgb(255, 64, 58),
+              0 0 80px rgb(255, 150, 202);
+  transition: 1s;
+}
+.dot:hover{
+  box-shadow: 0 0 10px 30px rgba(44, 255, 227, 0.2),
+              0 0 30px 60px rgba(61, 216, 255, 0.1),
+              0 0 60px 120px rgba(70, 37, 255, 0.1),
+              0 0 120px 240px rgba(188, 17, 255, 0.2),
+              0 0 240px 480px rgba(255, 60, 0, 0.1),
+              0 0 480px 960px rgba(255, 0, 43, 0.1);
+
+}
